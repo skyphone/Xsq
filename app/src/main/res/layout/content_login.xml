@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin"
+        android:layout_marginTop="@dimen/space_60"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_17"
+        android:paddingRight="@dimen/space_17"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_phone_icon"
+                android:drawablePadding="10dip"
+                android:hint="请输入帐号"
+                android:textColorHint="#afafaf"
+                android:singleLine="true"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="#b2b2b2">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_17">
+
+            <EditText
+                android:id="@+id/login_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_password_icon"
+                android:drawablePadding="10dip"
+                android:ems="10"
+                android:hint="密码"
+                android:textColorHint="#afafaf"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="#b2b2b2"
+            >
+        </View>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="忘记密码"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lin"
+        android:id="@+id/txt_forgot"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@+id/lin"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+
+           android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/btn_login" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="新用户注册"
+            android:id="@+id/btn_reg" />
+    </LinearLayout>
+
+
+</RelativeLayout>
